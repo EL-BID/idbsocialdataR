@@ -31,5 +31,5 @@ data %>% ggplot(aes(x=year, y=value,
   labs(title = data$label_es) + theme_minimal()
 ```
 
-![e_g]("./inst/img/plot_eg.png")
+![e_g]("inst/img/plot_eg.png")
 
