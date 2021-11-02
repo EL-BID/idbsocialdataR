@@ -1,0 +1,19 @@
+Package: scldataR
+Title: Access to the data and statistics from SCLData
+Version: 0.0.0.9000
+Authors@R: 
+    technical data stewards
+Description: Tool to download the metadata and data of the indicators from SCLData
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    readr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    magrittr
