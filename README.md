@@ -1,25 +1,36 @@
 
-# scldataR
+# SCLDataR
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of scldataR is to ...
 
 ## Installation
 
 You can install the development version of scldataR like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages('devtools')
+library(devtools)
+devtools::install_github("BID-DATA/scldataR") 
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example
 
 ``` r
-library(scldataR)
-## basic example code
+
+data <- scldataR:::query_indicator(indicator = 'pobreza',
+                                   countries = 'COL,ECU,GUA',
+                                   categories = 'sex')
+
+
+library(ggplot2)
+data %>% ggplot(aes(x=year, y=value,
+                  color=country_name_es)) +  
+  geom_line(size = .5) + 
+  facet_wrap(~sex, scales = "free_y")+
+  labs(title = data$label_es) + theme_minimal()
 ```
+
+
+
 
