@@ -19,15 +19,17 @@ This is a basic example
 ``` r
 
 data <- scldataR:::query_indicator(indicator = 'pobreza',
-                                   countries = 'COL,ECU,GUA',
-                                   categories = 'sex')
+                                   countries = 'COL,ECU,BRA,URY',
+                                   categories = 'area')
+```
 
-
+# Plot
+``` r
 library(ggplot2)
 data %>% ggplot(aes(x=year, y=value,
                   color=country_name_es)) +  
   geom_line(size = .5) + 
-  facet_wrap(~sex, scales = "free_y")+
+  facet_wrap(~area, scales = "free_y")+
   labs(title = data$label_es) + theme_minimal()
 ```
 
