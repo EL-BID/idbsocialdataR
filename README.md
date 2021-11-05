@@ -15,8 +15,8 @@ devtools::install_github("BID-DATA/idbsocialdataR")
 Indicators dictionary
 
 ```r
-> scldataR::scldata_dict %>% 
-+     select(collection, indicator, label_es)
+idbsocialdataR::scldata_dict %>% 
+    select(collection, indicator, label_es)
 # A tibble: 223 x 3
    collection              indicator    label_es                             
    <chr>                   <chr>        <chr>                                
