@@ -9,7 +9,7 @@ install the development version of scldataR:
 ``` r
 install.packages('devtools')
 library(devtools)
-devtools::install_github("BID-DATA/scldataR") 
+devtools::install_github("BID-DATA/idbsocialdataR") 
 ```
 
 Indicators dictionary
