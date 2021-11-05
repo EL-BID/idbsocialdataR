@@ -41,7 +41,7 @@ This is a basic example
 
 ``` r
 
-data <- scldataR:::query_indicator(indicator = 'pobreza',
+data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
                                    countries = 'COL,ECU,BRA,URY',
                                    categories = 'area')
 ```
