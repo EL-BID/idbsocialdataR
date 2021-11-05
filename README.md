@@ -4,7 +4,7 @@
 
 ## Installation
 
-You can install the development version of scldataR like so:
+install the development version of scldataR:
 
 ``` r
 install.packages('devtools')
