@@ -4,19 +4,19 @@
 
 ## Installation
 
-You can install the development version of scldataR like so:
+install the development version of scldataR:
 
 ``` r
 install.packages('devtools')
 library(devtools)
-devtools::install_github("BID-DATA/scldataR") 
+devtools::install_github("BID-DATA/idbsocialdataR") 
 ```
 
 Indicators dictionary
 
 ```r
-> scldataR::scldata_dict %>% 
-+     select(collection, indicator, label_es)
+idbsocialdataR::scldata_dict %>% 
+    select(collection, indicator, label_es)
 # A tibble: 223 x 3
    collection              indicator    label_es                             
    <chr>                   <chr>        <chr>                                
@@ -41,7 +41,7 @@ This is a basic example
 
 ``` r
 
-data <- scldataR:::query_indicator(indicator = 'pobreza',
+data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
                                    countries = 'COL,ECU,BRA,URY',
                                    categories = 'area')
 ```
