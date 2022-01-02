@@ -34,6 +34,7 @@ get_map <- function(level='All', isoalpha3='All'){
 #' @import readr
 #' @import sf
 #' @import ggplot2
+#' @import scales
 #' @importFrom tidyr gather
 #' @export
 #' @examples
