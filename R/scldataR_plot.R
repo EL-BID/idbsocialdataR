@@ -7,7 +7,7 @@
 #' @import stringr
 #' @import readr
 #' @import sf
-#' @importFrom tidyr gather
+#' @importFrom tidyr gather ggplot2
 #' @export
 #' @examples
 #' get_map(level='1',isoalpha3="ARG")
