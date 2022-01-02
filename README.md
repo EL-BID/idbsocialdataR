@@ -3,10 +3,8 @@
 
 
 ## Installation
-
 For the moment this package is only available from github.
 To install the development version:
-
 
 ``` r
 if (!require(devtools)) {
@@ -16,11 +14,11 @@ devtools::install_github("BID-DATA/scldataR")
 ```
 
 ## Quick Example
-
+=======
 
 ``` r
 
-data <- scldataR:::query_indicator(indicator = 'pobreza',
+data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
                                    countries = 'COL,ECU,BRA,URY',
                                    categories = 'area')
 ```
