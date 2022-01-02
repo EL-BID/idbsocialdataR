@@ -9,7 +9,8 @@ query_indicator(
   categories = "All",
   countries = "All",
   yearstart = "All",
-  yearend = "All"
+  yearend = "All",
+  year = "All"
 )
 }
 \arguments{
@@ -18,6 +19,8 @@ query_indicator(
 \item{categories}{Optional categories (sex, age, area)}
 
 \item{countries}{Optional. countries (alpha-3 country code)}
+
+\item{year}{Optional.}
 }
 \value{
 A data frame with selected indicators
@@ -27,8 +30,6 @@ Get available data about selected indicator.
 }
 \examples{
 query_indicator(indicator="pobreza,pindi_ci")
-
 query_indicator(indicator="pobreza",categories='sex,age')
-
 query_indicator(indicator="pobreza",categories='sex',countries='mex,arg')
 }
