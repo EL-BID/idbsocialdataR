@@ -53,7 +53,7 @@ idbsocial_choropleth <- function(indicator, year, level='All', isoalpha3='All'){
 
   yy <- ggplot(data = output, aes(fill = value)) +
     geom_sf(size = 0.25) +
-    scale_fill_distiller(name=indicator, palette = "Blues", breaks = pretty_breaks(), direction=1)+
+    scale_fill_distiller(name=indicator, palette = "Blues", breaks = scales:::pretty_breaks(), direction=1)+
     labs(title = unique(output$label_es[!is.na(output$label_es)]),
          caption = unique(output$label_es[!is.na(output$description_es)])) +
     theme(axis.text.x = element_blank(),
