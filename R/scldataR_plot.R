@@ -12,7 +12,7 @@
 #' @export
 #' @examples
 #' get_map(level='1',isoalpha3="ARG")
-scldata_line <- function(indicator,categories='All', countries='All', yearstart='All', yearend='All', year='All'){
+idbsocial_line <- function(indicator,categories='All', countries='All', yearstart='All', yearend='All', year='All'){
 
   output <- query_indicator(indicator,categories=categories, countries=countries, yearstart=yearstart, yearend=yearend, year=year)
 

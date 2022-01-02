@@ -2,10 +2,10 @@
 
 export("%>%")
 export(get_map)
+export(idbsocial_choropleth)
+export(idbsocial_line)
 export(query_dictionary)
 export(query_indicator)
-export(scldata_choropleth)
-export(scldata_line)
 import(dplyr)
 import(ggplot2)
 import(jsonlite)

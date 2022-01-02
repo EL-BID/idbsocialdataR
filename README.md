@@ -27,7 +27,7 @@ data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
 
 # Plot Examples
 ``` r
-idbsocialdataR:::scldata_line('pobreza', yearstart = 2000, yearend = 2020 )
+idbsocialdataR:::idbsocial_line('pobreza', yearstart = 2000, yearend = 2020 )
 ```
 
 ![e_g](inst/img/plot_line.png)
@@ -35,7 +35,7 @@ idbsocialdataR:::scldata_line('pobreza', yearstart = 2000, yearend = 2020 )
 
 # Plot Map
 ``` r
-idbsocialdataR:::scldata_choropleth('pobreza', year = 2020)
+idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020)
 
 ```
 

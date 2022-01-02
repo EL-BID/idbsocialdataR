@@ -37,7 +37,7 @@ get_map <- function(level='All', isoalpha3='All'){
 #' @export
 #' @examples
 #' get_map(level='1',isoalpha3="ARG")
-scldata_choropleth <- function(indicator, year, level='All', isoalpha3='All'){
+idbsocial_choropleth <- function(indicator, year, level='All', isoalpha3='All'){
 
   map <- get_map(level=level, isoalpha3=isoalpha3)
   data <- query_indicator(indicator,countries=isoalpha3,year=toString(year))
