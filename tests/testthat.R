@@ -1,4 +1,4 @@
 library(testthat)
-library(scldataR)
+library(idbsocialdataR)
 
-test_check("scldataR")
+test_check("idbsocialdataR")

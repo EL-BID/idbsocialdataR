@@ -7,10 +7,10 @@ For the moment this package is only available from github.
 To install the development version:
 
 ``` r
-if (!require(devtools)) {
-    install.packages("devtools")
-}
-devtools::install_github("BID-DATA/scldataR") 
+install.packages("devtools")
+install.packages("sf")
+
+devtools::install_github("BID-DATA/idbsocialdataR") 
 ```
 
 ## Quick Example
@@ -27,7 +27,7 @@ data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
 
 # Plot Examples
 ``` r
-scldata_line('pobreza', yearstart = 2000, yearend = 2020 )
+idbsocialdataR:::scldata_line('pobreza', yearstart = 2000, yearend = 2020 )
 ```
 
 ![e_g](inst/img/plot_line.png)
@@ -35,7 +35,7 @@ scldata_line('pobreza', yearstart = 2000, yearend = 2020 )
 
 # Plot Map
 ``` r
-scldata_choropleth('pobreza', year = 2020)
+idbsocialdataR:::scldata_choropleth('pobreza', year = 2020)
 
 ```
 
@@ -45,7 +45,7 @@ scldata_choropleth('pobreza', year = 2020)
 
 # Get Dictionary
 ```r
-> scldataR:::query_dictionary() %>% 
+> idbsocialdataR:::query_dictionary() %>% 
 +     select(collection, indicator, label_es)
 
 # A tibble: 223 x 3
