@@ -79,7 +79,7 @@ You can always build your own graphs but sometimes it is useful to have some qui
 ### Line Chart
 
 ``` r
-idbsocial_plot('pobreza',type='line', countries='All' ,yearstart = 2000, yearend = 2020, categories='All')
+idbsocialdataR:::idbsocial_plot('pobreza',type='line', countries='All' ,yearstart = 2000, yearend = 2020, categories='All')
 
 ```
 
@@ -90,7 +90,7 @@ idbsocial_plot('pobreza',type='line', countries='All' ,yearstart = 2000, yearend
 ### Bar Chart
 
 ``` r
-idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,yearstart = 2000, yearend = 2020)
+idbsocialdataR:::idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,yearstart = 2000, yearend = 2020)
 
 ```
 
