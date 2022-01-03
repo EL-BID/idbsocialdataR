@@ -27,10 +27,18 @@ data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
 
 # Plot Examples
 ``` r
-idbsocialdataR:::idbsocial_line('pobreza', yearstart = 2000, yearend = 2020 )
+idbsocial_plot('pobreza',type='line', countries='All' ,yearstart = 2000, yearend = 2020, categories='All')
+
 ```
 
 ![e_g](inst/img/plot_line.png)
+
+``` r
+idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,yearstart = 2000, yearend = 2020, categories='sex')
+
+```
+
+![e_g](inst/img/plot_bar.png)
 
 
 # Plot Map
