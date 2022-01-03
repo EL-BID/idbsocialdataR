@@ -64,3 +64,14 @@ idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020)
  3 Household Socio-Econom… union_ci     % de población en unión formal o inf…
  4 Household Socio-Econom… miembro6_ch  % de hogares con al menos un miembro…
 ```
+
+
+
+# Get Map
+```r
+idbsocialdataR:::get_map(level = '1', isoalpha3 = 'COL') %>% 
+  ggplot(aes(fill = isoalpha3)) +
+  geom_sf(size = 0.25)
+```
+
+![e_g](inst/img/query_map.png)
