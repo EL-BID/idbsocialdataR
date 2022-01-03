@@ -90,7 +90,7 @@ idbsocial_plot('pobreza',type='line', countries='All' ,yearstart = 2000, yearend
 ### Bar Chart
 
 ``` r
-idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,yearstart = 2000, yearend = 2020, categories='sex')
+idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,yearstart = 2000, yearend = 2020)
 
 ```
 
