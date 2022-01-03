@@ -8,11 +8,16 @@ For the moment this package is only available from github.
 To install the development version:
 
 ``` r
-install.packages("devtools")
 install.packages("sf")
+install.packages("devtools")
+devtools::install_github("BID-DATA/idbsocialdataR", force = TRUE) 
 
+<<<<<<< HEAD
 devtools::install_github("BID-DATA/idbsocialdataR") 
 
+=======
+library(idbsocialdataR)
+>>>>>>> f9d9c20f5244a64ee816ac5c8383f7cecdb03aad
 ```
 
 Quick Example
