@@ -16,7 +16,7 @@ get_map <- function(level='All', isoalpha3='All'){
   urls <- iadburls()
   url <- urls$geojson_url
 
-  if(level!='1')   url <- str_c(url,"&level=",level)
+  if(level!='All')   url <- str_c(url,"&level=",level)
   if(isoalpha3!='All')   url <- str_c(url,"&isoalpha3=",isoalpha3)
 
   map <- read_sf(url)
