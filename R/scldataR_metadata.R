@@ -17,6 +17,8 @@ get_countries <- function(){
 
   countries <- jsonlite::fromJSON(url) %>%
     as_tibble()
+
+  return(countries)
 }
 
 
@@ -39,6 +41,8 @@ get_sources <- function(){
 
   sources <- jsonlite::fromJSON(url) %>%
     as_tibble()
+
+  return(sources)
 }
 
 
@@ -61,6 +65,8 @@ get_themes <- function(){
 
   themes <- jsonlite::fromJSON(url) %>%
     as_tibble()
+
+  return(themes)
 }
 
 
@@ -98,5 +104,7 @@ query_dictionary <- function(indicator='All',collection='All',resource='All'){
 
   dictionary <- jsonlite::fromJSON(url) %>%
     as_tibble()
+
+  return(dictionary)
 }
 

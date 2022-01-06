@@ -17,12 +17,16 @@ devtools::install_github("BID-DATA/idbsocialdataR")
 
 # Data
 
+With this function you can download any indicator from the SCLdata collections. You can browse this [dictionary](https://github.com/BID-DATA/idbsocialdataR/blob/main/data/scldata_dict.csv) to see what is available.
+
+
 ## Indicators
 ``` r
 data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
                                    countries = 'COL,ECU,BRA,URY',
                                    categories = 'area')
 ```
+
 ``` r
 # A tibble: 5 x 23
   iddate  year month idgeo  isoalpha3 source  indicator area  value     se    cv sample theme_es theme_en
@@ -56,6 +60,16 @@ dictionary <- idbsocialdataR:::query_dictionary() %>% select(collection, indicat
  3 Household Socio-Economic Surve… union_ci         "Porcentaje de personas en unión formal o informal"  
  4 Household Socio-Economic Surve… tamh_ch          "Tamaño promedio del hogar"                          
  5 Household Socio-Economic Surve… rural_ci         "Porcentaje de la población que reside en zonas rura…
+```
+
+### countries, Sources & themes
+
+```r
+countries <- idbsocialdataR:::get_countries()
+
+sources <- idbsocialdataR:::get_sources()
+
+themes <- idbsocialdataR:::get_themes()
 ```
 
 

@@ -1,3 +1,33 @@
+#' Search for indicator using words and filters.
+#' @param search search
+#' @param countries Optional. countries (alpha-3 country code)
+#' @param yearstart Optional. yearstart
+#' @param yearend Optional. yearend
+#' @return A data frame with found results
+#' @import dplyr
+#' @import stringr
+#' @import readr
+#' @importFrom tidyr gather
+#' @export
+#' @examples
+#' search_indicator(search="pobreza")
+
+search_indicator <- function(search,categories='All', countries='All', yearstart='All', yearend='All', year='All'){
+  #argument "search" is missing, with no default
+  if(is.na(search))   stop('argument "search" is missing, with no default')
+
+  urls <- iadburls()
+  url <- str_c(urls$base_url,"data/search?words=",search)
+
+  if(countries!='All')   url <- str_c(url,"&countries=",countries)
+  if(yearstart!='All')   url <- str_c(url,"&yearstart=",toString(yearstart))
+  if(yearend!='All')   url <- str_c(url,"&yearend=",toString(yearend))
+
+  url <- str_c(url,urls$utils_url)
+  data <- read_csv(url)
+  return(data)
+}
+
 #' Get available data about selected indicator.
 #' @param indicator Selected indicator
 #' @param categories Optional categories (sex, age, area)
@@ -30,6 +60,7 @@ query_indicator <- function(indicator,categories='All', countries='All', yearsta
   url <- str_c(url,urls$utils_url)
   data <- read_csv(url)
 
+  return(data)
 }
 
 

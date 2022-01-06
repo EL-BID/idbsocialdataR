@@ -20,6 +20,8 @@ get_map <- function(level='All', isoalpha3='All'){
   if(isoalpha3!='All')   url <- str_c(url,"&isoalpha3=",isoalpha3)
 
   map <- read_sf(url)
+
+  return(map)
 }
 
 
