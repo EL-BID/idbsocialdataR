@@ -114,7 +114,7 @@ idbsocialdataR:::idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,years
 ### Maps
 
 ``` r
-idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020)
+idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020, isoalpha3='All')
 
 ```
 
