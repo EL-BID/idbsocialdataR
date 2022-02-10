@@ -17,7 +17,7 @@ devtools::install_github("EL-BID/idbsocialdataR")
 
 # Data
 
-With this function you can download any indicator from the SCLdata collections. You can browse this [dictionary](https://github.com/BID-DATA/idbsocialdataR/blob/main/data/scldata_dict.csv) to see what is available.
+With this function you can download any indicator from the SCLdata collections. You can browse this [dictionary](https://github.com/EL-BID/idbsocialdataR/blob/main/data/scldata_dict.csv) to see what is available.
 
 
 ## Indicators
