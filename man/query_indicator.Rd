@@ -10,7 +10,8 @@ query_indicator(
   countries = "All",
   yearstart = "All",
   yearend = "All",
-  year = "All"
+  year = "All",
+  latest = FALSE
 )
 }
 \arguments{
@@ -21,6 +22,8 @@ query_indicator(
 \item{countries}{Optional. countries (alpha-3 country code)}
 
 \item{year}{Optional.}
+
+\item{latest}{Optional. latest data point available}
 }
 \value{
 A data frame with selected indicators
