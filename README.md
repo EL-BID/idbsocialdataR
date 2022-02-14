@@ -14,23 +14,44 @@ This tool was developed to facilitate the consultation of the region's indicator
 
 
 ## Installation
-For the moment this package is only available from github.
+For the moment this package is only available from github. 
+
+R (>= 2.10)
+
 To install the development version:
 
 ``` r
 install.packages("devtools")
-install.packages("sf")
-
 devtools::install_github("EL-BID/idbsocialdataR") 
 
+# Optional dependency for some functions
+install.packages("sf")
 ```
+
 
 # Data
 
 With this function you can download any indicator from the SCLdata collections. You can browse this [dictionary](https://github.com/EL-BID/idbsocialdataR/blob/main/data/scldata_dict.csv) to see what is available.
 
 
-## Indicators
+
+## Search Indicators
+``` r
+idbsocialdataR::search_indicator(search='pobreza')
+```
+
+``` r
+# A tibble: 8 x 6
+  indicator      description_en                               description_es valuetype label_en label_es
+  <chr>          <chr>                                        <chr>          <chr>     <chr>    <chr>   
+1 pobreza        "Percentage of the population whose income ~ Porcentage de~ pct       Poverty~ Pobreza~
+2 pobreza_PHC    "Percentage of the population with incomes ~ Porcentage de~ pct       Poverty~ Pobreza~
+3 pobreza31      "\nPercentage of the population with income~ Porcentage de~ pct       Extreme~ Pobreza~
+4 pobreza31_PHC  "\nPercentage of the population with income~ Porcentage de~ pct       Extreme~ Pobreza~
+```
+
+
+## Query Indicators
 ``` r
 data <- idbsocialdataR:::query_indicator(indicator='pobreza',
                                    countries='COL,ECU,BRA,URY',
