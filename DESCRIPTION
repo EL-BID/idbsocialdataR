@@ -8,13 +8,13 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Suggests: 
     readr,
+    sf,
     testthat (>= 3.0.0)
-    sf    
 Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
 Imports: 
     magrittr,
     dplyr,
-    tidyr
+    tidyr,
 LazyData: true
