@@ -5,7 +5,6 @@
 #' @import dplyr
 #' @import stringr
 #' @import readr
-#' @import sf
 #' @importFrom tidyr gather
 #' @export
 #' @examples
@@ -34,7 +33,6 @@ get_map <- function(level='All', isoalpha3='All'){
 #' @import dplyr
 #' @import stringr
 #' @import readr
-#' @import sf
 #' @import ggplot2
 #' @importFrom scales pretty_breaks
 #' @importFrom tidyr gather

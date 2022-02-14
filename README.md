@@ -1,6 +1,12 @@
 
 # SCLDataR
-Important: This package is in Beta - expect changes and updates
+ <font size="1">**Important**: This package is in Beta - expect changes and updates</font> 
+
+
+Library to access standardized SCLdata indicators on topics such as poverty, inequality, health, labor market, gender and diversity, education and migration for the 26 countries of the region.  
+
+
+This tool was developed to facilitate the consultation of the region's indicators, providing a unified source of data on different topics that can be easily used to generate comparative analyses or studies on the region.This will boost knowledge about the region, facilitating decision making with a reliable and comparable source of information for the countries of Latin America and the Caribbean. 
 
 
 ## Installation
@@ -22,9 +28,10 @@ With this function you can download any indicator from the SCLdata collections. 
 
 ## Indicators
 ``` r
-data <- idbsocialdataR:::query_indicator(indicator = 'pobreza',
-                                   countries = 'COL,ECU,BRA,URY',
-                                   categories = 'area')
+data <- idbsocialdataR:::query_indicator(indicator='pobreza',
+                                   countries='COL,ECU,BRA,URY',
+                                   categories='area',
+                                   latest=FALSE)
 ```
 
 ``` r

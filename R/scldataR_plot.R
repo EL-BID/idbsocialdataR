@@ -6,7 +6,6 @@
 #' @import dplyr
 #' @import stringr
 #' @import readr
-#' @import sf
 #' @import ggplot2
 #' @importFrom tidyr gather
 #' @export
