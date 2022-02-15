@@ -12,6 +12,13 @@
 
 get_map <- function(level='All', isoalpha3='All'){
   #argument "indicator" is missing, with no default
+  if (!requireNamespace("sf", quietly = TRUE)) {
+    stop(
+      "Package \"sf\" must be installed to use this function.",
+      call. = FALSE
+    )
+  }
+
   urls <- iadburls()
   url <- urls$geojson_url
 
@@ -40,6 +47,12 @@ get_map <- function(level='All', isoalpha3='All'){
 #' @examples
 #' get_map(level='1',isoalpha3="ARG")
 idbsocial_choropleth <- function(indicator, year, level='All', isoalpha3='All'){
+  if (!requireNamespace("sf", quietly = TRUE)) {
+    stop(
+      "Package \"sf\" must be installed to use this function.",
+      call. = FALSE
+    )
+  }
 
   map <- get_map(level=level, isoalpha3=isoalpha3)
   data <- query_indicator(indicator,countries=isoalpha3,year=toString(year))
