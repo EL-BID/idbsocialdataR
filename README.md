@@ -107,6 +107,8 @@ themes <- idbsocialdataR:::get_themes()
 
 ## BaseMaps
 
+**Optional dependency "sf" must be installed to use this function.**
+
 ```r
 idbsocialdataR:::get_map(level = '1', isoalpha3 = 'COL') %>% 
   ggplot(aes(fill = isoalpha3)) +
@@ -144,6 +146,7 @@ idbsocialdataR:::idbsocial_plot('pobreza',type='bar', countries='MEX,ARG' ,years
 
 
 ### Maps
+**Optional dependency "sf" must be installed to use this function.**
 
 ``` r
 idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020, isoalpha3='All')
