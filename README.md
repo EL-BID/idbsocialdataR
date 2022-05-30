@@ -26,7 +26,7 @@ To install the development version:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("EL-BID/idbsocialdataR") 
+devtools::install_github("EL-BID/idbsocialdataR@main") 
 
 # Optional dependency for some functions
 install.packages("sf")
