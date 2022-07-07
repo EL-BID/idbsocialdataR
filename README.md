@@ -156,6 +156,10 @@ idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020, isoalpha3='All')
 <img src="inst/img/plot_map.png" width=45% >
 
 
+### Author
+- [Roberto Sánchez A.](https://github.com/rsanchezavalos)
+
+
 
 ### Limitation of responsibilities
 ---

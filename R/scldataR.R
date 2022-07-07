@@ -63,8 +63,11 @@ query_indicator <- function(indicator,categories='All', countries='All',
   if(year!='All')   url <- str_c(url,"&year=",toString(year))
   if(latest!=FALSE)   url <- str_c(url,"&latest")
 
-  url <- str_c(url,urls$utils_url)
-  data <- read_csv(url)
+  url <- str_c(url)#,urls$utils_url)
+
+  raw_json <- jsonlite::fromJSON(url)
+  data <- raw_json$data %>% as_tibble()
+  # data <- read_json(url)
 
   return(data)
 }
