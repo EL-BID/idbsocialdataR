@@ -158,7 +158,7 @@ idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020, isoalpha3='All')
 
 ### Author
 - [Roberto Sánchez A.](https://github.com/rsanchezavalos)
-
+- [María Reyes Retana](https://github.com/mariarrt94)
 
 
 ### Limitation of responsibilities
