@@ -16,7 +16,9 @@ This tool was developed to facilitate the consultation of the region's indicator
 ## Installation
 For the moment this package is only available from github. 
 
-R (>= 2.10)
+R (>= 3.3)
+rlang (1.0.6)
+purrr(0.3.5)
 
 To install the development version:
 
