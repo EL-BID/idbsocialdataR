@@ -1,3 +1,7 @@
+![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)
+![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/idbsocialdataR/readme&dt=&tid=UA-4677001-16)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_idbsocialdataR&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_idbsocialdataR)
+
 **SCL Data - Data Ecosystem Working Group**
 
 [![IDB Logo](https://scldata.iadb.org/assets/iadb-7779368a000004449beca0d4fc6f116cc0617572d549edf2ae491e9a17f63778.png)](https://scldata.iadb.org)
@@ -22,7 +26,7 @@ To install the development version:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("EL-BID/idbsocialdataR") 
+devtools::install_github("EL-BID/idbsocialdataR@main") 
 
 # Optional dependency for some functions
 install.packages("sf")
