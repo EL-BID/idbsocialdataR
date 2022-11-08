@@ -20,7 +20,7 @@ This tool was developed to facilitate the consultation of the region's indicator
 ## Installation
 For the moment this package is only available from github. 
 
-R (>= 2.10)
+R (>= 3.3)
 
 To install the development version:
 
@@ -32,6 +32,8 @@ devtools::install_github("EL-BID/idbsocialdataR@main")
 install.packages("sf")
 ```
 
+While installing the package R will ask you to update some packages. Install none of them (option = 3). 
+If you want to update said packages update them in another instruction, and not while installing the library.
 
 # Data
 

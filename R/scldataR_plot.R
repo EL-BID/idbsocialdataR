@@ -7,6 +7,7 @@
 #' @import stringr
 #' @import readr
 #' @import ggplot2
+#' @import rlang
 #' @importFrom tidyr gather
 #' @export
 #' @examples
