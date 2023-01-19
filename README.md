@@ -162,7 +162,7 @@ idbsocialdataR:::idbsocial_choropleth('pobreza', year = 2020, isoalpha3='All')
 <img src="inst/img/plot_map.png" width=45% >
 
 
-### Author
+### Authors
 - [Roberto Sánchez A.](https://github.com/rsanchezavalos)
 - [María Reyes Retana](https://github.com/mariarrt94)
 
@@ -173,3 +173,11 @@ The IDB is not responsible, under any circumstance, for damage or compensation, 
 
 I. Under any concept of intellectual property, negligence or detriment of another part theory; I
 ii. Following the use of the Digital Tool, including, but not limited to defects in the Digital Tool, or the loss or inaccuracy of data of any kind. The foregoing includes expenses or damages associated with communication failures and / or malfunctions of computers, linked to the use of the Digital Tool.
+
+### Other libraries
+---
+
+You can also find this library in Python and Stata:
+
+- [Library Python](https://github.com/EL-BID/idbsocialdatapy)
+- [Library Stata](https://github.com/BID-DATA/idbsocialdata)
